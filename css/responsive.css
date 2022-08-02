@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px){
+  body{
+    padding-left: 0;
+  }
+  
+  header{
+    position: absolute;
+    width: 100%;
+    height: auto;
+  }
+  header div.inner{
+    flex-direction: initial;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  header .inner ul.gnb, header .inner ul.tnb{
+    display: none;
+  }
+  header .inner ul.enb{
+    position: static;  /*position: absolute; 를 상쇄시킬때 사용*/
+      
+  }
+  /* 빙그레 맛    */
+  #taste .inner ul.list li{
+    width: calc((100% / 2) - (50px / 2));
+  }
+  
+  /* 브랜드   */
+  #shop .inner ul.list li{
+    width: calc(100%/2);
+    
+  }
+}

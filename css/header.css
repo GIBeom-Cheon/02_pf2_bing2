@@ -1,0 +1,315 @@
+
+header{
+  position:fixed;
+  width: 250px;
+  height:  100%;
+  z-index: 2;  
+  left: 0;
+  
+}
+
+header::before{    /*  위에 선  일부러 지웠음*/
+/*   content:"";
+  position: absolute;
+  width : 100%;
+  border: 1px solid #ccc;
+  top:10px;
+  left: 0;
+  z-index:1;
+  box-sizing: border-box;
+  
+ */
+}
+
+
+
+header div.inner{   /*이너 안에 컨텐츠들의 정렬 부분*/
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+}
+
+header .inner,header .inner>*{
+  /* border: 1px solid #333; */
+}
+header .inner{
+    
+  }
+header .inner h1{
+
+}
+header .inner h1 a{
+  background-image: url(../img/logo-pc.png);
+  width: 142px;
+  height: 35px;
+  display:block;
+  font-size:0;
+/*  기범st  */
+
+  
+}
+
+
+
+
+header .inner ul.gnb{
+  align-self: flex-start;
+  padding-left: 32px;
+}
+
+
+header .inner ul.gnb::before{  /*메인태그 호버시 바탕화면의 속성*/
+  content: "";
+  background-color: white;
+  height: 100%;
+  position:absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  display:none;
+  transition: all 1s;
+  width: 1600px;
+}
+
+header .inner ul.gnb::after {  /*메인태그 호버시 밑줄*/
+  content:"";
+  position: absolute;
+  width : 1600px;
+  border: 1px solid red;
+  top: 100px;
+  left: -20px;
+  display: none;
+}
+
+
+header .inner ul.gnb:hover::before{
+  display: block;
+  height: 100%;
+  width:  1580px;
+}
+header .inner ul.gnb:hover::after{
+  display: block;
+}
+
+
+header .inner ul.gnb{
+
+}
+header .inner ul.gnb li{
+/* 기범st   */
+  /* text-align: center; */
+
+}
+header .inner ul.gnb>li>h2 a{
+  font-weight:700;
+  padding: 20px 21px;
+  display:block;
+/*   line-height: 3; */
+  font-size: 20px;
+  margin-top: 12px;
+  position: relative;
+  
+}
+header .inner ul.gnb>li>h2 a::after{ /*헤드태그 호버시 밑줄 작업*/
+  content:"";
+  display: block;
+  width: 0;
+  border-bottom: 4px solid red;
+  transform: translateY(33px);
+  position: absolute;
+  left: 21px;
+  transition: all 0.5s;
+  transform: scaleX(0);
+  transform-origin: 50%; 
+
+}
+
+header .inner ul.gnb>li>h2 a:hover{  /*헤드 태그 호버시 글자색*/
+  color:red;
+ 
+}
+
+
+header .inner ul.gnb>li>h2 a:hover::after{ /*헤드 태그 호버시 밑줄 나타나는 태그*/
+  content: "";
+  display: block;
+  width: calc(100% - 42px);
+  border-bottom: 4px solid red;
+  transform: translateY(33px);
+  position: absolute;
+  left: 21px;
+  transition: all 0.5s;
+  transform-origin: 50%;
+}
+
+/* header .inner ul.gnb>li:hover>h2 a::after{
+content: "";
+  display: block;
+  width: calc(100% - 42px);
+  border-bottom: 4px solid red;
+  transform: translateY(33px) scaleX(0);
+  position: absolute;
+  left: 21px;
+  
+  
+} */
+
+
+
+
+
+
+
+
+
+/*  gnb 서브메뉴                                     */
+header .inner ul.gnb li ul.gnbsub{
+  display: none;
+/*   /*  기범st  */
+  margin-top: -50px;
+  position: absolute;
+  left: 300px;
+
+ 
+}
+
+
+
+header .inner ul.gnb:hover ul.gnbsub{  /*헤드태그 호버시 나타나는 밑에 서브 */
+  display:flex;
+  justify-content: flex-start;
+
+  width: 1200px;
+  gap: 60px;
+  opacity: 0;
+  animation-name: gnbFadeIn;
+  animation-fill-mode:forwards;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+}
+
+@keyframes gnbFadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+header .inner ul.gnb li ul.gnbsub li{
+ 
+}
+header .inner ul.gnb li ul.gnbsub li:hover{
+
+}
+
+header .inner ul.gnb li ul.gnbsub li a{  /*제목 태그 안 리스트들의 속성*/
+
+  line-height: 2;
+  
+/*   padding-right: 5px; */
+/* 기범st   */
+/*   padding-left:21px; */
+  color: black;
+  display: flex;
+  
+}
+
+
+header .inner ul.enb{
+  position: absolute;
+  top: 30px;
+  right:calc( -1920px + 400px);
+  gap : 20px;
+  display: flex;
+
+  
+}
+header .inner ul.enb li{
+  
+}
+
+
+header .inner ul.enb li select{
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+  font-size: 20px;
+/*  기범  */
+
+}
+
+
+header .inner ul.enb li a{   /*햄버거 위아래*/
+  font-size: 0;
+  width: 20px;
+  height: 15px;
+  display:block;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  display: flex;
+  align-items: center;
+/*  기범  */
+
+}
+
+header .inner ul.enb li a:hover{
+  border-color:red;
+}
+
+
+
+
+header .inner ul.enb li a::before{ /*가운데 햄버거*/
+  content:"";
+  border-top: 3px solid black;
+  width: 100%;
+  display:block; 
+/*   height:3px;*/
+}
+
+header .inner ul.enb li a:hover::before{
+  border-color: red;
+}
+
+
+header .inner ul.enb li select option{
+  
+}
+
+
+header .inner ul.tnb{
+
+  font-size: 15px;
+  font-weight:700;
+  row-gap: 10px;
+}
+
+
+
+header .inner ul.tnb li{
+
+}
+
+header .inner ul.tnb li a{
+  
+}
+
+header .inner ul.tnb li a::after{
+  content:"";
+  display:inline-block;
+  
+  width:17px;
+  height: 17px;
+  background-image: url(../img/open_in_new_FILL0_wght400_GRAD0_opsz48.svg);
+  background-size: contain;
+  background-size: cover;
+  vertical-align: -4px;
+  
+}

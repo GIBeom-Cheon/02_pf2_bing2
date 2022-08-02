@@ -1,0 +1,186 @@
+#title {
+  height: 100%;
+  background-image: url(../img/section01_bg.png);
+  background-size: cover;
+  /* background-position: center;
+  background-repeat: no-repeat; */
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+   min-height: 700px;
+  position: relative;
+}
+
+#title::before{
+  content:"";
+  background-image: url(../img/sec01_logo.png);
+  background-size: cover;
+  width: 1508px;
+  height:388px;
+  margin-top:60px;
+  margin-bottom: 40px;
+  animation-name:fadeIn;  /*애니메이션 이름 */
+  animation-duration: 3s;  /*애니메이션 진행시간*/
+  /* animation-iteration-count: 3; 애니메이션 반복횟수
+  animation-direction:alternate; 애니메이션 진행방향:왔다갔단 */
+}
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+    transform:scale(0.7);
+  }
+  70%{
+    transform:scale(1.2);
+  }
+
+
+  100%{
+    opacity: 1;
+    transform:scale(1);
+  }
+}
+
+
+
+
+#title form.search {
+  /*! margin-top: 500px; */
+
+  width: 70%;
+  background-color: white;
+  height: 60px;
+  box-shadow: 2px 0px 10px #ccc;
+  border-radius:  30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:30px;
+  padding-right:30px;
+  box-sizing: border-box;
+  position: relative;
+  animation-name: moveLeft;
+  animation-duration: 1s;
+  transform:translateX(70px);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: 2;
+  animation-direction:alternate; */
+}
+
+@keyframes moveLeft{
+  0%{
+    transform: translateX(70px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+#title form.search::before{
+  content:"";
+  line-height: 1.6;
+}
+
+
+
+
+
+#title form.search input {
+  background: url(../img/search_icon.png) no-repeat center left;
+  text-align: left;
+  width: 78%; 
+  /*   height: 100%; */
+  padding-left: 30px;
+  font-size: 17px;
+  /*   letter-spacing: -0.85px; */
+  text-align: left;
+  border: 0;
+}
+
+#title form.search input:focus{
+  outline: none;
+}
+
+
+#title form.search button {
+  cursor: pointer;
+  background-color: red;
+  color:white;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius:  25px;
+  /*   height: 50px; */
+  line-height: 3.2;
+  /*   border_radius: calc(29.3333px/2); */
+  width: 15%;
+  margin-right: -2%;
+}
+#title h2 {
+
+}
+#title ul.hash {
+  display: flex;
+  margin-top:30px;
+  gap: 20px;
+  font-weight: 500;
+}
+#title ul.hash li {
+
+}
+#title ul.hash li a {
+  border: 1px solid gray ;
+  display:flex;
+  justify-content:space-between;
+  padding: 10px 10px;
+  border-radius: 20px;
+  opacity: 1;
+}
+
+#title ul.hash li a:hover {
+  color:red;
+}
+
+#title span{
+  position: absolute;
+  bottom: 20px;
+}
+#title span::before{
+  content:"";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: 2px solid;
+  border-top : transparent;
+  border-left : transparent;
+  margin: 0 auto;
+  transform: rotate(45deg);
+  margin-bottom: 10px;
+
+
+  
+
+
+
+  animation-name:moveMove;
+  animation-direction:alternate;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  
+}
+@keyframes moveMove{
+  0%{
+
+    transform:  translateY(-30px)  rotate(45deg);
+  }
+  100%{
+ 
+    transform:  translateY(0px) rotate(45deg)
+  }
+}
+
+#title span::after{
+  content:"Scroll";
+ 
+}

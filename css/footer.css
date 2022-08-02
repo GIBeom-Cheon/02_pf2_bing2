@@ -1,0 +1,138 @@
+footer {
+  background-color:black;
+  color: gray; 
+  
+}
+footer a{
+  color: white;
+}
+footer .inner {       /* ineer 에 height를 줘야지 inner 안의 요소들의 높이가 늘어남 footer에 주면 안에 요소들이 붕 뜨게 됨*/
+  height: 380px;
+  width: 100%;
+  box-sizing: border-box;
+}
+footer .inner > div {
+
+}
+footer .inner .left {
+
+  
+}
+footer .inner .left h1 {
+  
+}
+footer .inner .left h1 a {
+  display: block;
+  background-image:url(../img/f_logo.png);
+  background-repeat:  no-repeat;
+  font-size: 0;
+  width: 113px;
+  height: 30px;
+  
+}
+footer .inner .left address {
+  color: lightgray;
+  transform: translateY(-50px);
+}
+footer .inner .left p.copyright {
+  
+}
+footer .inner .right {
+  align-items: end;
+}
+footer .inner .right ul.personal {
+ gap : 20px;
+}
+footer .inner .right ul.personal li {
+  
+}
+footer .inner .right ul.personal li a {
+ 
+ }
+footer .inner .right ul.personal li a:hover{
+  color:red;
+}
+footer .inner .right div.bottom {
+  gap: 50px;
+}
+footer .inner .right div.bottom ul.sns {
+   gap : 20px;
+  align-items: center;
+}
+footer .inner .right div.bottom ul.sns li {
+  font-size: 0;
+  display: inline-block;
+/*   background-color: gray; */
+  border-radius: 35px;
+  background-repeat:  no-repeat;
+}
+footer .inner .right div.bottom ul.sns li a {
+  color: white;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  display: block;
+  
+
+}
+footer .inner .right div.bottom ul.sns li:nth-child(1) a{
+  background-image: url(../img/logo-instagram.svg);
+  
+
+
+}
+footer .inner .right div.bottom ul.sns li:nth-child(1) a:hover{
+  background-image: url(../img/logo-instagram-hover.svg);
+}
+
+footer .inner .right div.bottom ul.sns li:nth-child(2) a{
+    background-image: url(../img/logo-youtube.svg);
+ 
+}
+footer .inner .right div.bottom ul.sns li:nth-child(2) a:hover{
+  background-image: url(../img/logo-youtube-hover.svg);
+}
+footer .inner .right div.bottom ul.sns li:nth-child(3) a{
+  background-image: url(../img/logo-twitter.svg);
+
+}
+footer .inner .right div.bottom ul.sns li:nth-child(3) a:hover{
+  background-image: url(../img/logo-twitter-hover.svg);
+}
+footer .inner .right div.bottom > a {
+ 
+}
+footer .inner .right div.bottom > a:hover{
+  color: red;
+}
+
+footer .inner .right div.bottom > a::before{
+  content:"";
+  background-image: url(../img/flag_store.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 13px;
+  
+}
+
+footer .inner .right div.bottom > a::after{
+  content: "";
+  background-image:url(../img/select_btn01.png);
+  background-position: 15px 15px;
+  background-repeat: no-repeat; 
+  transform: rotate(-90deg) translateX(20px);
+ 
+  display: inline-block;
+  line-height: 40px;
+  vertical-align: middle;
+  margin-right: 13px;
+  width: 70px;
+  height: 40px;
+  rotate: (45deg);
+  
+}
+
+

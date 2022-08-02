@@ -1,0 +1,106 @@
+div.img {
+  border: 3px solid;
+  width: 1000px;
+}
+
+div .img img {
+  border: 1px solid;
+  width: 100%;
+  max-width: 1500px;
+}
+
+
+
+/* 커뮤니티 */
+
+#community {
+  padding-top: 100px;
+  height: 100%;
+}
+#community .inner {
+width: 1000px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+/* flex-wrap: wrap; */
+border-radius: 50px;
+box-shadow: 0 0 11px #ccc;
+ align-content: center;
+  align-items: center;
+}  
+#community .inner > :not(.cyber){
+  width: calc(100% /2 - 20px );
+  box-sizing : border-box;
+  }
+#community .inner > article {
+ border: 3px solid red;
+}
+#community .inner > article.cyber {
+width: 100%;
+}
+#community .inner > article.sinmungo {
+
+}
+#community .inner > article h3 {
+  border: 2px dotted blue;
+  font-size: 27px;
+  font-weight:  bold;
+  text-align:center;
+  border-top : 2px solid;
+  margin-top : 30px;
+  padding-top : 20px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+#community .inner > article p {
+  
+}
+#community .inner > article > a {
+  
+}
+#community .inner div{
+
+}
+#community .inner div article {
+
+}
+#community .inner div article:not(.faq) {
+
+}
+#community .inner div article.faq {
+
+}
+#community .inner div article.email {
+
+}
+#community .inner div article.telephone {
+
+}
+#community .inner div article h3 {
+  font-size: 27px;
+  font-weight:  bold;
+}
+#community .inner div article ul {
+
+}
+#community .inner div article ul li {
+
+}
+#community .inner div article ul li a {
+  
+}
+#community .inner div article p {
+  
+}
+#community .inner div article > a {
+  
+}
+
+
+
+
+
+
+
+
+
